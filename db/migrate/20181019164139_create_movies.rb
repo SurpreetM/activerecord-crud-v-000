@@ -3,8 +3,8 @@ class CreateMovies < ActiveRecord::Migration[5.2]
     create_table :movies do |t|
       t.string :title
       t.integer :release_date
+      t.string :director
       t.string :lead
-      t.string :release_date
       t.boolean :in_theaters
     end
   end
